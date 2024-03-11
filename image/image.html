@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hover</title>
+  <style>
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .container:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="product1.jpg" alt="Image 1" width="200" height="200">
+    <img class="overlay" src="product2.jpg" alt="Image 2" width="200" height="200">
+  </div>
+</body>
+</html>
